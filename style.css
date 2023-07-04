@@ -1,5 +1,9 @@
 /* GENERAL */
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   background-color: pink;
   font-family: "Roboto", sans-serif;
@@ -15,6 +19,11 @@ input:focus {
   outline: none;
 }
 
+.main-content {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -22,12 +31,6 @@ input:focus {
   align-items: center;
   justify-content: stretch;
   gap: 10px;
-}
-
-@media (max-width: 700px) {
-  .sm-hidden {
-    display: none;
-  }
 }
 
 h3 {
@@ -52,6 +55,7 @@ h4 {
   background-color: #131921;
   padding: 0 10px;
   height: 60px;
+  cursor: pointer;
 }
 .search-bar,
 form {
@@ -103,13 +107,19 @@ button[type="submit"] {
 
 /* TAG BAR */
 
+.overflow-hidden {
+  overflow-x: hidden;
+  position: absolute;
+  width: 1280px;
+}
+
 .tag-bar {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
-  width: 100%;
-  justify-content: flex-start;
-  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .button-tag {
@@ -120,12 +130,7 @@ button[type="submit"] {
   font-size: 14px;
   border-radius: 4px;
   margin: 10px 1px;
-  min-width: 10px;
-  /* max-height: 40px; */
-}
-
-.overflow-hidden {
-  overflow-x: hidden;
+  cursor: pointer;
 }
 
 /* HERO SECTION */
@@ -153,18 +158,35 @@ button[type="submit"] {
 .button-cta {
   border: none;
   font-weight: bold;
-  padding: 10px 20px;
-  font-size: 21px;
+  padding: 15px 30px;
+  font-size: 32px;
   background-color: #87ecc1;
   border-radius: 50px;
   color: #242f3f;
   cursor: pointer;
   position: absolute;
-  transform: translateY(-100px) translateX(50px);
+  transform: translateY(-160px) translateX(50px);
   z-index: 20;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 /* ITEM CATEGORIES */
+
+.collection {
+  margin-left: 20px;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+  width: 1280px;
+}
+
+.flex-collection {
+  gap: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: stretch; */
+}
 
 .image-container {
   overflow: hidden;
@@ -174,21 +196,10 @@ button[type="submit"] {
 
 .image-container > * {
   width: 175px;
-  min-width: 175px;
   height: 225px;
   object-fit: cover;
   margin: 0 auto;
   border-radius: 4px;
-}
-
-.collection {
-  margin-left: 20px;
-  margin-bottom: 60px;
-}
-
-.flex-collection {
-  gap: 10px;
-  overflow: hidden;
 }
 
 .category-3 {
@@ -296,12 +307,6 @@ button[type="submit"] {
   color: #999;
 }
 
-/* IGNORE */
-/* body {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-} */
 ul,
 li,
 p {
@@ -316,4 +321,19 @@ a {
   /* position: absolute; */
   width: 100%;
   bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .sm-hidden {
+    display: none;
+  }
+  .button-cta {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .header {
+    gap: 60px;
+  }
 }
