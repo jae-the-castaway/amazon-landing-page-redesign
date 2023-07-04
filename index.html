@@ -3,11 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8caf1fd425.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <nav>
+      <div class="header flex">
+        <img class="logo" src="./images/Amazon-Logo.png" height="50px"  alt="Amazon logo" />
+        <div class="user flex">
+            <span style="font-size: 2em; color: white"
+              ><i class="fa-solid fa-location-dot"></i></span>
+            <p class="orders-text">60610</p>
+            <p class="orders-text sm-hidden">Chicago</p>
+          </div>
+        <form class="flex" action="" method="get">        <input class="search-bar"  placeholder="Search everything">
+        </input>
+              <button type="submit"><span style="font-size: 1.5em; color: rgb(11, 11, 11)"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span></button></form>
+        <div class="orders flex">
+          <span style="font-size: 2em; color: white"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></span>
+          <p class="orders-text sm-hidden">Orders</p>
+        </div>
+        <div class="cart flex">
+          <span style="font-size: 2em; color: white"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></span>
+          <p class="orders-text sm-hidden">Cart</p>
+        </div>
+        <div class="user flex">
+          <span style="font-size: 2em; color: white"
+            ><i class="fa-solid fa-user"></i
+          ></span>
+          <p class="orders-text sm-hidden">User</p>
+        </div>
+      </div>
+      <div class="tag-bar">
+        <button><i class="fa-solid fa-bars"></i>All</button>
+      </div>
+    </nav>
+    <div class="hero-image"><img src="./images/hero.png" alt="brand deal image" /></div>
+    <div class="items"><div class="category-1"> <h2>Pick Up Where You Left Off</h2><div class="flex "><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=1" alt=""></div><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=2" alt=""></div><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=3" alt=""></div><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=4" alt=""></div><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=5" alt=""></div><div class="image-container"><img src="https://source.unsplash.com/random/700x900/?item?sig=6" alt=""></div></div></div></div>
+    <div class="banner"><img src="./images/banner.jpg" alt="brand banner"></div>
+    <footer>
+      <div class="back-to-top">
+        <span style="font-size: 3em; color: white"
+          ><i class="fa-solid fa-angle-up"></i></span
+        >Back to top
+      </div>
+    </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>

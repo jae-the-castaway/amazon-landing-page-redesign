@@ -1,3 +1,97 @@
+/* GENERAL */
+
 body {
   background-color: pink;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(243, 243, 243);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  gap: 10px;
+}
+
+@media (max-width: 700px) {
+  .sm-hidden {
+    display: none;
+  }
+}
+
+/* HEADER */
+
+.logo {
+  align-items: center;
+}
+
+.header {
+  color: rgb(243, 243, 243);
+  background-color: #232f3e;
+  padding: 0 10px;
+}
+
+.search-bar,
+form {
+  flex-grow: 1;
+}
+
+form {
+  background-color: white;
+  border-radius: 4px;
+}
+
+form:focus-within {
+  outline: 2px solid #c47600;
+}
+
+form:focus {
+  outline: 0px;
+  text-decoration: none;
+}
+
+input {
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ff9900;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+/* HERO SECTION */
+
+/* ITEM CATEGORIES */
+
+.image-container {
+  width: 233px;
+  height: 300px;
+  overflow: hidden;
+  width: 175px;
+  height: 225px;
+}
+
+.image-container > * {
+  width: 175px;
+  height: 225px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* FOOTER */
