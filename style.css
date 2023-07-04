@@ -244,12 +244,6 @@ button[type="submit"] {
   flex-basis: 30%;
   max-width: 30%;
 }
-@media var(--bp-850) {
-  .amazon-col {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
 
 /* Footer Lists */
 .amazon-footer-lists {
@@ -322,12 +316,4 @@ a {
   /* position: absolute; */
   width: 100%;
   bottom: 0;
-}
-@media only screen and (max-width: 769px) {
-  .tablet {
-  }
-}
-@media only screen and (max-width: 480px) {
-  .mobile {
-  }
 }
