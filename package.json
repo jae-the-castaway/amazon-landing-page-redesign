@@ -1,0 +1,15 @@
+{
+  "name": "amazon-landing-page-redesign",
+  "version": "1.0.0",
+  "description": "netflix-inspired simplified amazon landing page redesign webdsite for MLH challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "css"
+  ],
+  "author": "jaeheon kim",
+  "license": "ISC"
+}
