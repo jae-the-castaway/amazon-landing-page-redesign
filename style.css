@@ -130,6 +130,7 @@ button[type="submit"] {
   font-size: 14px;
   border-radius: 4px;
   margin: 10px 1px;
+  white-space: nowrap;
   cursor: pointer;
 }
 
